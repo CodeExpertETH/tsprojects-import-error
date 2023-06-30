@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "useUnknownInCatchVariables": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noPropertyAccessFromIndexSignature": true,
+
+    "useDefineForClassFields": true,
+    "preserveConstEnums": true,
+    "pretty": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["es2020","dom", "dom.iterable"],
+    "noEmit": true,
+    "paths": {
+      "meteor/*": [
+        "node_modules/@types/meteor/*",
+        "typings/*.d.ts",
+        ".meteor/local/types/packages.d.ts"
+      ],
+      "/*": ["*"]
+    },
+    "jsx": "react",
+    "baseUrl": ".",
+    "typeRoots": ["./typings", "./node_modules/@types"],
+    "outDir": "build",
+    "noUncheckedIndexedAccess": true,
+    "noErrorTruncation": true
+  },
+  "watchOptions": {
+    "watchFile": "useFsEvents"
+  },
+  "include": ["**/*"],
+  "exclude": ["tests/**/*", "public/**/*", "build/**/*"]
+}

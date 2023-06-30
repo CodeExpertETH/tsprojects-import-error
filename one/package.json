@@ -1,0 +1,12 @@
+{
+  "name": "one",
+  "version": "0.0.0",
+  "private": true,
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  },
+  "dependencies": {
+    "fp-ts": "^2.16.0",
+    "two": "workspace:*"
+  }
+}

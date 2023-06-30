@@ -1,0 +1,13 @@
+{
+  "name": "tsprojects-import-error",
+  "private": true,
+  "dependencies": {
+    "fp-ts": "^2.16.0",
+    "typescript": "^5.1.6"
+  },
+  "workspaces": [
+    "one",
+    "two"
+  ],
+  "packageManager": "yarn@3.6.0"
+}
