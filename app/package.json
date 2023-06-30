@@ -1,5 +1,5 @@
 {
-  "name": "one",
+  "name": "app",
   "version": "0.0.0",
   "private": true,
   "installConfig": {
@@ -7,6 +7,6 @@
   },
   "dependencies": {
     "fp-ts": "^2.16.0",
-    "two": "workspace:*"
+    "lib": "workspace:*"
   }
 }

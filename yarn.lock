@@ -5,6 +5,15 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"app@workspace:app":
+  version: 0.0.0-use.local
+  resolution: "app@workspace:app"
+  dependencies:
+    fp-ts: ^2.16.0
+    lib: "workspace:*"
+  languageName: unknown
+  linkType: soft
+
 "fp-ts@npm:^2.16.0":
   version: 2.16.0
   resolution: "fp-ts@npm:2.16.0"
@@ -12,12 +21,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"one@workspace:one":
+"lib@workspace:*, lib@workspace:lib":
   version: 0.0.0-use.local
-  resolution: "one@workspace:one"
+  resolution: "lib@workspace:lib"
   dependencies:
     fp-ts: ^2.16.0
-    two: "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -27,14 +35,6 @@ __metadata:
   dependencies:
     fp-ts: ^2.16.0
     typescript: ^5.1.6
-  languageName: unknown
-  linkType: soft
-
-"two@workspace:*, two@workspace:two":
-  version: 0.0.0-use.local
-  resolution: "two@workspace:two"
-  dependencies:
-    fp-ts: ^2.16.0
   languageName: unknown
   linkType: soft
 
